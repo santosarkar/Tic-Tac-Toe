@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    background: radial-gradient(circle, #2a2a2a, #000);
+}
+
+.game-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, #1c1c1c, #3a3a3a);
+    border: 2px solid #00ffd5;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00ffd5;
+    font-size: 2.5rem;
+    text-shadow: 0 4px 8px rgba(0, 255, 213, 0.3);
+}
+
+/* Player Indicator */
+#player-X, #player-O {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+/* Centered Status */
+#status {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+/* Game Board */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #262626;
+    border: 2px solid #00ffd5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ffd5;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #333;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 213, 0.7);
+}
+
+.cell:active {
+    background-color: #444;
+    transform: scale(0.9);
+    box-shadow: 0 0 8px rgba(0, 255, 213, 0.3);
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    background-color: #00ffd5;
+    color: #111;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #00bfae;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #00897b;
+    transform: scale(0.95);
+}
+
+button {
+    border: 2px solid #00ffd5;
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.6), 0 0 40px rgba(0, 255, 213, 0.4), 0 0 80px rgba(0, 255, 213, 0.2);
+}
